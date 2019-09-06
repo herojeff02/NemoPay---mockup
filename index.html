@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Noto+Sans+KR:500&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+    <title>NemoPay</title>
+    <!--안녕하세요! 네모페이 임시 개발자 조준오입니다!-->
+    <!--웹이 처음이고, FireBase로 급하게 DB를 떼웠습니다.-->
+    <!--비록 부족한 모습일지라도, 즐거운 체험 되셨으면 좋겠으며, 정식 런칭 때는 더 멋진 앱으로 찾아뵙도록 하겠습니다! 감사합니다.-->
+</head>
+<body>
+<button class="bottom_next_button" onclick="nextPage()">
+    <a>장바구니</a>
+</button>
+
+<div id="top_bar">
+    <a>NemoPay 주문 체험</a>
+</div>
+<div id="introduction">
+    <img src="images/introduction.jpg"
+         style="width: 12rem; height:12rem; position:absolute; left: 3rem; top:19rem; transform: translateY(-50%)">
+    <div style="position:absolute; right: 0; height:18rem; width:calc(100% - 20rem)">
+        <a style="display: block;position: absolute;top: 25%;transform: translateY(-50%);margin-left: 0.3rem">NemoPay
+            부스</a>
+        <div id="star_container">
+            <img src="images/star_filled.png">
+            <img src="images/star_filled.png">
+            <img src="images/star_filled.png">
+            <img src="images/star_filled.png">
+            <img src="images/star_unfilled.png">
+        </div>
+        <a style="display: block;position: absolute;top: 75%;transform: translateY(-50%);margin-left: 0.3rem">부스에 오신 것을
+            환영합니다!</a>
+    </div>
+</div>
+<div style="height: 4rem; width: 100%;"></div>
+<!--<div id="tab_container">-->
+<!--    <button class="tab" id="tab_left">-->
+<!--        <a>메뉴</a>-->
+<!--    </button>-->
+<!--    <button class="tab" id="tab_right">-->
+<!--        <a>리뷰</a>-->
+<!--    </button>-->
+<!--</div>-->
+<div id="main_menu" class="tab_contents">
+    <br>
+    <a>대표 메뉴</a>
+    <br>
+    <br>
+    <br>
+    <div class="menu_cell" onclick="selectMenu(0);">
+        <div>
+            <p>파파야 슬러시</p>
+            <p>0원</p>
+        </div>
+        <img src="images/slush_b.jpg" style="width: 10rem; height: 10rem">
+    </div>
+    <div class="menu_cell" onclick="selectMenu(1);">
+        <div>
+            <p>오렌지 슬러시</p>
+            <p>0원</p>
+        </div>
+        <img src="images/slush_y.jpg" style="width: 10rem; height: 10rem">
+    </div>
+</div>
+
+<div style="height: 3rem; width: 100%; text-align: center"></div>
+<div id="comments" class="tab_contents">
+    <br>
+    <a style="position: relative; left:-5rem">리뷰</a>
+    <br>
+    <br>
+    <br>
+    <div class="menu_cell">
+        <div>
+            <p style="text-align: left; margin-left: 0">안녕하세요!<br>BlackStone NemoPay입니다!</p>
+        </div>
+    </div>
+    <div class="menu_cell">
+        <div>
+            <p style="text-align: left; margin-left: 0">데모 리뷰</p>
+        </div>
+    </div>
+    <div class="menu_cell">
+        <div>
+            <p style="text-align: left; margin-left: 0">반갑습니다!</p>
+        </div>
+    </div>
+    <div class="menu_cell">
+        <div>
+            <p style="text-align: left; margin-left: 0">슬러시 드시고 가세요!</p>
+        </div>
+    </div>
+    <div class="menu_cell">
+        <div>
+            <p style="text-align: left; margin-left: 0">안녕하세요!<br>BlackStone NemoPay입니다!</p>
+        </div>
+    </div>
+</div>
+<div style="height: 15rem; width: 100%;"></div>
+
+</body>
+</html>

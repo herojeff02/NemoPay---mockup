@@ -1,0 +1,12 @@
+div{
+     z-index: 10;
+     position: fixed;
+     height: 10rem;
+     width: 100%;
+     top: 0;
+     background: rgb(248,248,248);
+     text-align: center;
+
+
+     line-height: 10rem;
+ }

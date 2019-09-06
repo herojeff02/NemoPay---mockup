@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+}
+
+img {
+    border-radius: 50%;
+}
+
+a {
+    font-size: 2.7rem;
+    font-family: 'Lexend Deca', 'Noto Sans KR', sans-serif;
+}
+
+p {
+    text-align: left;
+    margin-left: 3rem;
+    font-size: 2.7rem;
+    font-family: 'Lexend Deca', 'Noto Sans KR', sans-serif;
+}
+
+textarea {
+    font-size: 2.3rem;
+    display: block;
+    font-family: 'Lexend Deca', 'Noto Sans KR', sans-serif;
+    height: 8.7rem;
+    border-radius: 0;
+    border-color: rgb(148, 148, 148);
+    border-style: solid;
+}
+
+#card_area {
+    z-index: 21;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 10rem;
+    width: calc(100% - 10rem);
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 7px 7px 0 7px;
+    border-radius: 3rem 3rem 0 0
+}
+
+#wait_window {
+    box-shadow: 1rem 1rem 20rem 1rem rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 6rem;
+    width: calc(100% - 12rem);
+    height: 69rem;
+    background: rgb(248, 248, 248);
+    border-radius: 2rem;
+    z-index: 20;
+}
+
+#wait_window_background {
+    opacity: 0;
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 19;
+}
+
+#wait_window p {
+    margin-left: 0;
+}
+
+#top_bar {
+    z-index: 10;
+    position: fixed;
+    height: 10rem;
+    width: 100%;
+    top: 0;
+    background: rgb(248, 248, 248);
+    text-align: center;
+
+
+    line-height: 10rem;
+}
+
+#star_container {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+#introduction {
+    padding-top: 10rem;
+    height: 18rem;
+    padding-left: 2rem;
+}
+
+#comments {
+
+}
+
+#main_menu {
+    height: 36rem;
+}
+
+.tab_contents {
+    /*top: 8rem;*/
+    margin-left: 2rem;
+    margin-right: 2rem;
+    position: relative;
+    display: block;
+    text-align: center;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+#tab_container {
+}
+
+.tab {
+    display: none;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: calc(50% - 2rem);
+    height: 8rem;
+    background: rgb(240, 240, 240);
+    border-width: 1px;
+    border-color: lightgray;
+    border-style: solid;
+    position: absolute;
+}
+
+#tab_left {
+    left: 0;
+}
+
+#tab_right {
+    right: 0;
+}
+
+
+.bottom_next_button {
+    position: fixed;
+    height: 9rem;
+    z-index: 10;
+
+    width: calc(100% - 6rem);
+    margin-left: 3rem;
+    margin-right: 3rem;
+    bottom: 3rem;
+
+    font-size: 2.3rem;
+
+    border-radius: 1.6rem;
+    background-color: #007aff;
+    color: white;
+    box-shadow: 1px 2px 12px 1px rgba(0, 80, 144, 0.5);
+}
+
+button {
+    border-width: 0;
+}

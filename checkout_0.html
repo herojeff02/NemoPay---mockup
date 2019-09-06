@@ -1,0 +1,88 @@
+<!--안녕하세요! 네모페이 임시 개발자 조준오입니다!-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="checkout.css">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Noto+Sans+KR:500&display=swap" rel="stylesheet">
+    <title>NemoPay</title>
+</head>
+<body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-database.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDgaLQ_XLtrSjUXNpOpiFzr0HaUVLzrvXA",
+        authDomain: "testing-3058e.firebaseapp.com",
+        databaseURL: "https://testing-3058e.firebaseio.com",
+        projectId: "testing-3058e",
+        storageBucket: "",
+        messagingSenderId: "154303188081",
+        appId: "1:154303188081:web:c6c508f59e5d97b5"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="checkout.js"></script>
+
+
+<button class="bottom_next_button" onclick="newOrder(0);">
+    <a>주문 확인</a>
+</button>
+
+<div id="top_bar">
+    <a>NemoPay 주문 체험 - 결제</a>
+</div>
+
+<div style="height: 12rem; width: 100%;"></div>
+<div id="main_menu" class="tab_contents">
+    <div class="menu_cell">
+        <div>
+            <div style="top:2rem; position: absolute; width: 100%">
+                <a style="left: 2rem;position: absolute">가격</a>
+                <a style="right: 2rem;  position: absolute">0원</a>
+            </div>
+            <div style="top:8rem; position: absolute; width: 100%">
+                <a style="left: 2rem;position: absolute">할인 쿠폰</a>
+                <a style="right: 2rem;position: absolute">[1회 : 체험 부스]</a>
+            </div>
+            <div style="top:14rem; position: absolute; width: 100%">
+                <a style="left: 2rem;position: absolute">네모페이 포인트</a>
+                <a style="right: 2rem;position: absolute ">0n</a>
+            </div>
+            <div style="top: 20rem; position: absolute; width: 100%">
+                <a style="left: 2rem; position: absolute; display: block">요청사항</a><br><br><br><br>
+                <textarea id="requests"
+                          style="margin-left: 2rem; margin-right:2rem; width: calc(100% - 4rem);"></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="wait_window_background">
+    <div id="wait_window">
+        <div style="position: absolute; top: 40%; transform: translateY(-50%); width: 100%;">
+            <p style="text-align:center">대기 인원</p>
+            <p id="wait_ppl" style="text-align:center; color: #007aff; font-size: 10rem">명</p>
+            <p style="text-align:center; margin-top: 4rem">예상 대기 시간</p>
+            <p id="wait_time" style="text-align:center; color: #007aff; font-size: 10rem">분</p>
+        </div>
+
+        <div id="card_area" onclick="onReceipt();">
+            <p style="position: absolute; top: 50%; width:100%; transform: translateY(-60%);text-align: center; opacity: 0.7; font-size: 2.4rem">전자 영수증</p>
+        </div>
+    </div>
+</div>
+
+
+<div style="height: 15rem; width: 100%;"></div>
+
+</body>
+</html>
